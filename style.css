@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 520px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 0 40px;
+  margin-bottom: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 2px 0px 4px #0000001a;
+  z-index: 2;
+}
+
+.sidebar-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.logo {
+  width: 291px;
+  height: 102px;
+}
+
+.logo img {
+  width: 291px;
+  height: 102px;
+}
+
+.logo-hr hr {
+  width: 276px;
+  height: 0px;
+  border: 1px solid #dc4f54;
+}
+
+.ProgramOverview {
+  width: 265px;
+  height: 33px;
+  text-align: left;
+  font: normal normal bold 27px/33px Montserrat;
+  letter-spacing: 0px;
+  color: #264397;
+}
+
+.nav {
+  width: 440px;
+  height: calc(100vh - 235px);
+  overflow-y: auto;
+  background: #f8f8f8;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  display: block;
+}
+
+.nav::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.nav-item > a {
+  height: 80px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  letter-spacing: 0px;
+  color: #000000;
+  /* font: normal normal medium 20px/24px Montserrat; */
+  font: normal normal normal 20px/24px Montserrat;
+}
+/* content */
+.content {
+  width: calc(100vw - 520px);
+  height: 100vh;
+}
+
+.head {
+  height: 142px;
+  width: 100%;
+  display: flex;
+  padding-left: 110px;
+  align-items: center;
+  /* UI Properties */
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.heading {
+  width: 827px;
+  height: 58px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 48px/58px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+/* <-------------------------------------------------page 1------------------------------------------------------> */
+.info {
+  display: flex;
+  height: calc(100vh - 142px);
+  width: calc(100vw - 520px);
+  display: grid;
+  grid-template-columns: 20% 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 58px;
+}
+
+.image {
+  width: 200px;
+  height: 247px;
+  margin: 0 20px;
+  margin-left: 110px;
+  margin-right: 58px;
+  /* UI Properties */
+  /* background: transparent url("Assets/page1/Image\ 1.png"); */
+}
+
+.information {
+  display: flex;
+  justify-content: end;
+  margin-right: 200px;
+}
+.information-span {
+  background: #f4fbff 0% 0% no-repeat padding-box;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+
+  padding: 43px;
+  width: 90%;
+}
+
+.information span {
+  height: 29px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 24px/36px Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.bold-text {
+  height: 29px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 24px/36px Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+}
+.sign {
+  width: 272px;
+  height: 98px;
+  margin: 77px 0;
+  /* UI Properties */
+  background: transparent url("Assets/page1/Image\ 2.png") 0% 0% no-repeat
+    padding-box;
+  mix-blend-mode: multiply;
+}
+.navigation {
+  height: 100px;
+  width: calc(100vw - 520px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 200px;
+  margin-top: 111px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px -1px 6px #00000029;
+}
+.prv-btn,
+.next-btn {
+  width: 107px;
+  height: 29px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 24px/40px Montserrat;
+  letter-spacing: 0px;
+  color: #007cc3;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  body {
+    background-color: rebeccapurple;
+  }
+  .main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+} */
+
+/* Styles for extra large devices (large desktops) */
+@media only screen and (max-width: 1800px) {
+  .sidebar {
+    width: 400px;
+    padding: 0 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-head {
+    margin: 30px 0;
+  }
+
+  .logo {
+    width: 270px;
+    height: 102px;
+  }
+
+  .logo img {
+    width: 270px;
+    height: 100px;
+  }
+
+  .logo-hr hr {
+    width: 270px;
+    height: 0px;
+  }
+
+  .ProgramOverview {
+    width: 270px;
+    height: 33px;
+  }
+
+  .nav {
+    width: 340px;
+    height: calc(100vh - 235px);
+  }
+
+  .nav-item > a {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    /* font: normal normal medium 20px/24px Montserrat; */
+    font: normal normal normal 17px/20px Montserrat;
+  }
+
+  /* content */
+  .content {
+    width: calc(100vw - 400px);
+    height: 100vh;
+  }
+
+  .head {
+    height: 122px;
+    width: 100%;
+    display: flex;
+    padding-left: 80px;
+  }
+
+  .heading {
+    width: 827px;
+    height: 58px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 38px/48px Montserrat;
+  }
+
+  .info {
+    display: flex;
+    height: calc(100vh - 122px);
+    width: calc(100vw - 400px);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 40px;
+  }
+
+  .image {
+    width: 150px;
+    height: 200px;
+    margin: 0 20px;
+    margin-left: 70px;
+    margin-right: 40px;
+  }
+
+  .information {
+    margin-right: 90px;
+  }
+
+  .information-span {
+    background: #f4fbff 0% 0% no-repeat padding-box;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+
+    padding: 43px;
+    width: 90%;
+  }
+
+  .information span {
+    height: 25px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 18px/26px Montserrat;
+  }
+
+  .bold-text {
+    height: 22px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 18px/26px Montserrat;
+  }
+  .sign {
+    width: 230px;
+    height: 98px;
+    margin: 40px 0;
+    /* UI Properties */
+    background: transparent url("Assets/page1/Image\ 2.png") 0% 0% no-repeat
+      padding-box;
+  }
+  .navigation {
+    height: 70px;
+    width: calc(100vw - 400px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 85px;
+    margin-top: 80px;
+  }
+  .prv-btn,
+  .next-btn {
+    width: 80px;
+    height: 17px;
+    font: normal normal 600 19px/30px Montserrat;
+  }
+
+  .prv-btn-img {
+    height: 18px;
+    font: normal normal 600 19px/30px Montserrat;
+  }
+}
