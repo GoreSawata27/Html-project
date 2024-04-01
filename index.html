@@ -27,7 +27,7 @@
                     <div class="ProgramOverview">Program Overview</div>
                 </div>
 
-                <div>
+                <div class="navs">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html"> <span class="sidebar-title">Welcome</span>
@@ -75,6 +75,7 @@
         <!-- Page Content -->
         <div class="content">
             <div class="head">
+                <div class="burger" onclick="handlesidebar()"> <img class="open-icon" src="Assets/burger.png" alt="icon"/><img class="hidden" src="Assets/close.png" alt="icon"/></div>
                 <span class="heading">Welcome to Benchmark Phonics!</span>
             </div>
 
@@ -142,7 +143,18 @@
 
         </div>
     </main>
-
+    <script>
+        function handlesidebar() {
+            var navs = document.querySelector('.navs');
+            var burgerOpen = document.querySelector('.burger .open-icon');
+            var burgerClose = document.querySelector('.burger .hidden');
+            
+            navs.classList.toggle('sidebar-close');
+            burgerOpen.classList.toggle('hidden');
+            burgerClose.classList.toggle('close-icon');
+        }
+    </script>
+    
     <!-- Bootstrap JS (optional, only needed if you use Bootstrap JS components) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
