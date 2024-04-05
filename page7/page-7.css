@@ -101,6 +101,7 @@
   color: #ffffff;
   gap: 34px;
 }
+
 .page7-q-para-author {
   height: 37px;
   font: normal normal 600 30px/42px Montserrat;
@@ -158,6 +159,7 @@
     justify-content: center;
     padding-left: 34px;
   }
+
   /* .page7-boxes {
   } */
 
@@ -181,10 +183,12 @@
     font: normal normal normal 24px/36px Montserrat;
     letter-spacing: 0px;
   }
+
   .para7-bold-text {
     font: normal normal bold 24px/36px Montserrat;
     letter-spacing: 0px;
   }
+
   .page7-para-image {
     width: 478px;
     height: 275px;
@@ -236,6 +240,7 @@
   .hr-line {
     border-bottom: 1px solid #b2b2b2;
   }
+
   .page7-q-para {
     width: 671px;
     height: 129px;
@@ -247,6 +252,7 @@
     flex-direction: column;
     gap: 34px;
   }
+
   .page7-q-para-author {
     height: 37px;
 
@@ -273,4 +279,14 @@
 }
 
 @media only screen and (width <=1600px) and (width >=778px) {
+  .head-7 {
+    height: 80px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .heading-7 {
+    font: normal normal 600 24px/29px Montserrat;
+    padding-left: 30px;
+  }
 }

@@ -225,7 +225,139 @@
   margin: 23px 0;
 }
 
-@media only screen and (width <=768px) {
+@media only screen and (width <=480px) {
+  .head-3 {
+    height: 56px;
+    width: 480px;
+    padding-left: 0px;
+  }
+
+  .heading-3 {
+    font: normal normal 600 22px/29px Montserrat;
+    padding-left: 30px;
+  }
+
+  .page-3-list {
+    width: 480px !important;
+  }
+  .comm-width {
+    width: 49%;
+    margin-bottom: 30px;
+  }
+
+  .page-3-list li {
+    width: 50%;
+    margin-left: 25px;
+    margin-bottom: 34px;
+    list-style-type: disc;
+  }
+
+  .pages {
+    margin-top: 40px;
+  }
+
+  .pagination-info {
+    width: 350px;
+    height: 375px;
+  }
+
+  .current-heading {
+    font: normal normal bold 22px/30px Montserrat;
+  }
+
+  .pagination-list {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d5d5d5;
+    font: normal normal 600 28px/24px Montserrat;
+    letter-spacing: 0px;
+  }
+
+  .pagination-info-ul {
+    padding: 10px;
+    margin: 20px;
+    width: 309px;
+    height: 236px;
+  }
+
+  .pagination-info-ul ul {
+    margin-left: 20px;
+  }
+
+  .pagination-info-ul ul li {
+    height: 35px;
+    /* font: normal normal medium 20px/27px Montserrat; */
+    font: normal normal normal 22px/27px Montserrat;
+    letter-spacing: 0px;
+    margin: 23px 0;
+  }
+
+  .current-page-number-value {
+    width: 40px;
+    height: 40px;
+    font: normal normal 600 36px/15px Montserrat;
+  }
+
+  .pagination-header {
+    display: flex;
+    gap: 16px;
+  }
+  .active-page-line-k {
+    height: 40px;
+    width: 40px;
+  }
+  .active-line-k {
+    border: 3px solid #ee3b33;
+    height: 100%;
+  }
+
+  .active-page-line-1 {
+    height: 40px;
+    width: 153px;
+  }
+  .active-line-1 {
+    border: 3px solid #844293;
+    height: 100%;
+  }
+
+  .active-page-line-2 {
+    height: 40px;
+    width: 265px;
+  }
+  .active-line-2 {
+    border: 3px solid #f8981c;
+    height: 100%;
+  }
+
+  .active-page-line-3 {
+    height: 40px;
+    width: 375px;
+  }
+  .active-line-3 {
+    border: 3px solid #00acd4;
+    height: 100%;
+  }
+
+  .active-page-line-4 {
+    height: 40px;
+    width: 489px;
+  }
+  .active-line-4 {
+    border: 3px solid #f15922;
+    height: 100%;
+  }
+
+  .active-page-line-5 {
+    height: 40px;
+    width: 602px;
+  }
+  .active-line-5 {
+    border: 3px solid #06b085;
+    height: 100%;
+  }
+}
+
+@media only screen and (width >=480px) and (width<=1024px) {
   .head-3 {
     height: 80px;
     width: 100%;
@@ -293,73 +425,45 @@
     display: flex;
     gap: 16px;
   }
+}
 
-  /* .pagination-list {
+@media only screen and (width <=1600px) and (width >=1024px) {
+  .head-3 {
+    height: 100px;
+    padding-left: 50px;
+  }
+
+  .heading-3 {
+    font: normal normal 600 36px/34px Montserrat;
+  }
+
+  .pages {
+    margin-top: 60px;
+  }
+
+  .pagination-header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background: #fcfcfc 0% 0% no-repeat padding-box;
-    border: 1px solid #d5d5d5;
-    text-align: left;
-    font: normal normal 600 30px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #000000;
+    gap: 10px;
   }
 
-  .pagination-list-active-one {
-    text-align: left;
-    font: normal normal 600 30px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #ffffff;
-    background: #ee3b33 0% 0% no-repeat padding-box;
-    border: none;
+  .pagination-list {
+    width: 40px;
+    height: 40px;
+    font: normal normal 600 26px/24px Montserrat;
   }
 
-  .pagination-list-active-two {
-    text-align: left;
-    font: normal normal 600 30px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #ffffff;
-    background: #844293 0% 0% no-repeat padding-box;
-    border: none;
+  .pagination-list-active {
+    font: normal normal 600 26px/24px Montserrat;
   }
 
-  .pagination-list-active-three {
-    text-align: left;
-    font: normal normal 600 30px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #ffffff;
-    background: #f8981c 0% 0% no-repeat padding-box;
-    border: none;
+  .current-heading {
+    font: normal normal bold 30px/30px Montserrat;
   }
 
-  .pagination-list-active-four {
-    text-align: left;
-    font: normal normal 600 30px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #ffffff;
-    background: #00acd4 0% 0% no-repeat padding-box;
-    border: none;
-  }
-
-  .pagination-list-active-five {
-    text-align: left;
-    font: normal normal 600 30px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #ffffff;
-    background: #f15922 0% 0% no-repeat padding-box;
-    border: none;
-  }
-
-  .pagination-list-active-six {
-    text-align: left;
-    font: normal normal 600 30px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #ffffff;
-    background: #06b085 0% 0% no-repeat padding-box;
-    border: none;
+  .pagination-info {
+    width: 1060px;
+    height: 300px;
+    border-radius: 10px;
   }
 
   .pagination-head {
@@ -373,67 +477,79 @@
   .para-text-div {
     margin-top: 44px;
   }
+
   .active-page-line-k {
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
+    height: 40px;
+    width: 40px;
   }
   .active-line-k {
-    border: 4px solid #ee3b33;
+    border: 3px solid #ee3b33;
     height: 100%;
   }
+
   .active-page-line-1 {
-    height: 60px;
-    width: 214px;
-    display: flex;
-    justify-content: center;
+    height: 40px;
+    width: 142px;
   }
   .active-line-1 {
-    border: 4px solid #844293;
+    border: 3px solid #844293;
     height: 100%;
   }
+
   .active-page-line-2 {
-    height: 60px;
-    width: 362px;
-    display: flex;
-    justify-content: center;
+    height: 40px;
+    width: 242px;
   }
   .active-line-2 {
-    border: 4px solid #f8981c;
+    border: 3px solid #f8981c;
     height: 100%;
   }
+
   .active-page-line-3 {
-    height: 60px;
-    width: 514px;
-    display: flex;
-    justify-content: center;
+    height: 40px;
+    width: 340px;
   }
   .active-line-3 {
-    border: 4px solid #00acd4;
+    border: 3px solid #00acd4;
     height: 100%;
   }
+
   .active-page-line-4 {
-    height: 60px;
-    width: 668px;
-    display: flex;
-    justify-content: center;
+    height: 40px;
+    width: 442px;
   }
   .active-line-4 {
-    border: 4px solid #f15922;
+    border: 3px solid #f15922;
     height: 100%;
   }
+
   .active-page-line-5 {
-    height: 60px;
-    width: 820px;
-    display: flex;
-    justify-content: center;
+    height: 40px;
+    width: 542px;
   }
   .active-line-5 {
-    border: 4px solid #06b085;
+    border: 3px solid #06b085;
     height: 100%;
-  } */
-}
+  }
 
-@media only screen and (width <=1600px) and (width >=778px) {
+  .current-page-number-value {
+    width: 44px;
+    height: 44px;
+    font: normal normal 600 30px/20px Montserrat;
+  }
+
+  .pagination-info-ul {
+    margin: 30px;
+    padding: 10px;
+    height: 150px;
+  }
+
+  .pagination-info-ul ul {
+    margin-left: 20px;
+  }
+
+  .pagination-info-ul ul li {
+    font: normal normal normal 20px/21px Montserrat;
+    margin: 10px;
+  }
 }

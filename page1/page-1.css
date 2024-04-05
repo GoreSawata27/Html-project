@@ -1,10 +1,15 @@
+.head {
+  height: 142px;
+  padding-left: 140px;
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
+    no-repeat padding-box;
+}
 .heading-1 {
   text-align: left;
   font: normal normal 600 48px/58px Montserrat;
   letter-spacing: 0px;
   color: #ffffff;
 }
-
 .image img {
   width: 200px;
   height: 247px;
@@ -38,39 +43,43 @@
 }
 
 @media only screen and (width <=1600px) and (width >=1024px) {
+  .head {
+    height: 102px;
+    padding-left: 50px;
+  }
+  .heading-1 {
+    font: normal normal 600 28px/58px Montserrat;
+  }
+
   .image img {
-    width: 150px;
-    height: 200px;
+    width: 140px;
+    height: 170px;
   }
 
   .information-span {
-    background: #f4fbff 0% 0% no-repeat padding-box;
-    border: 1px solid #d1d1d1;
-    border-radius: 10px;
     padding: 43px;
     width: calc(100% - 200px);
-    min-width: 400px;
-    max-width: 100%;
-    font: normal normal normal 20px/30px Montserrat;
-    flex: 1;
+    font: normal normal normal 18px/24px Montserrat;
   }
 
   .bold-text {
-    height: 22px;
-    text-align: left;
     font: normal normal 600 18px/26px Montserrat;
   }
 
   .sign {
-    width: 230px;
+    width: 170px;
     height: 98px;
     margin: 40px 0;
-    background: transparent url("Assets/page1/Image\ 2.png") 0% 0% no-repeat
-      padding-box;
   }
 }
 
+/* for tabs */
 @media only screen and (width >=480px) and (width<=1024px) {
+  .head {
+    height: 80px;
+    padding-left: 0;
+  }
+
   .heading-1 {
     padding-left: 30px;
     font: normal normal 600 24px/29px Montserrat;
@@ -94,7 +103,13 @@
   }
 }
 
+/* for mobile  */
 @media only screen and (width <=480px) {
+  .head {
+    height: 55px;
+    padding-left: 0;
+  }
+
   .heading-1 {
     padding-left: 15px;
     font: normal normal 600 16px/24px Montserrat;
@@ -103,17 +118,20 @@
   .information-span {
     padding: 16px;
     width: 100%;
-    font: normal normal normal 14px/30px Montserrat;
+    font: normal normal normal 22px/30px Montserrat;
   }
 
   .image img {
-    height: 154px;
-    width: 124px;
+    width: 140px;
+    height: 170px;
+  }
+  .bold-text {
+    font: normal normal 600 22px/36px Montserrat;
   }
 
   .sign {
-    margin-top: 79px;
-    margin-bottom: 28px;
-    height: 42px;
+    width: 200px;
+    height: 60px;
+    margin: 50px 0;
   }
 }

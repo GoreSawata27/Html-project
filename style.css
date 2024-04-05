@@ -138,13 +138,6 @@ main {
   position: relative;
 }
 
-.head {
-  height: 142px;
-  padding-left: 140px;
-  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
-    no-repeat padding-box;
-}
-
 .navigation {
   height: 100px;
   width: calc(100vw - 520px);
@@ -198,7 +191,191 @@ main {
   margin-bottom: 30px;
 }
 
-/* for mobile */
+/* <---------------------------------------------for mobile------------------------------------------------> */
+@media only screen and (width <=480px) {
+  /* content */
+  .info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 40px 40px 40px;
+    gap: 40px;
+    margin-bottom: 90px;
+  }
+
+  /* commom */
+
+  .common-heading {
+    width: 100%;
+    font: normal normal bold 24px/38px Montserrat;
+  }
+
+  .para-text {
+    width: 100%;
+    font: normal normal normal 18px/24px Montserrat;
+  }
+
+  .comm-width {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .navigation {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    left: 0%;
+    margin: 0%;
+    padding: 0% 10px;
+    height: 80px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px -1px 6px #00000029;
+    opacity: 1;
+  }
+
+  .nav-item a {
+    height: 54px;
+    font: normal normal normal 14px / 24px Montserrat;
+  }
+
+  .nav-item-active a {
+    height: 54px;
+    font: normal normal normal 14px / 24px Montserrat;
+  }
+
+  .main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0%;
+    padding: 0px 15px;
+    height: 54px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* butger icon ///////////////// */
+  .burger {
+    width: 48px;
+    height: 54px;
+    background: #007cc3 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger .open-icon,
+  .close-icon {
+    width: 34px;
+  }
+
+  .heading {
+    /* height: 29px; */
+    text-align: left;
+    font: normal normal 600 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    padding-left: 30px;
+  }
+
+  .sidebar-head {
+    flex-direction: row !important;
+    margin: 0;
+    height: 54px;
+    gap: 20px;
+  }
+
+  .span {
+    display: flex;
+    width: 64px;
+    height: 100%;
+    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0%
+      0% no-repeat padding-box;
+  }
+
+  .logo,
+  .logo img {
+    height: 36px;
+    width: 106px;
+  }
+
+  .logo-hr hr {
+    width: 0;
+    height: 41px;
+  }
+
+  .content {
+    width: 100vw;
+  }
+
+  .nav {
+    width: 100%;
+    margin: 16px;
+    height: 90%;
+  }
+
+  .navs {
+    position: absolute;
+    width: calc(100% - 0px);
+    height: calc(100vh - 108px);
+    top: 108px;
+    right: 0%;
+    background-color: #fff;
+    display: flex !important;
+  }
+
+  .nav-link {
+    height: 80px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    opacity: 1;
+  }
+
+  .ProgramOverview {
+    /* width: 197px; */
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 16px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #264397;
+    opacity: 1;
+  }
+
+  .prv-btn,
+  .next-btn {
+    font: normal normal 600 16px/40px Montserrat;
+  }
+
+  .sidebar-close {
+    display: none;
+  }
+
+  .navigation {
+    margin: 0%;
+    padding: 0% 35px;
+    height: 54px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px -1px 6px #00000029;
+    opacity: 1;
+  }
+}
+
+/* <---------------------------------------------for tabs------------------------------------------------> */
+
 @media only screen and (width >=480px) and (width<=1024px) {
   .info {
     width: 100%;
@@ -244,17 +421,6 @@ main {
 
   .hidden {
     display: none;
-  }
-
-  .head {
-    padding: 0%;
-    width: 100%;
-    height: 80px;
-  }
-
-  .big-head {
-    height: 80px;
-    padding: 0%;
   }
 
   .burger {
@@ -384,27 +550,18 @@ main {
   }
 }
 
-/* for small laptops */
+/* <---------------------------------------------for laptops------------------------------------------------> */
+
 @media only screen and (width <=1600px) and (width >=1024px) {
-  .info {
-    display: flex;
-    height: max-content;
-    width: calc(100vw - 400px);
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 40px 80px 80px 80px;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-bottom: 90px;
-  }
+  /* sidebar */
 
   .sidebar {
-    width: 400px;
+    width: 350px;
     padding: 0 40px;
-    margin-bottom: 40px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .sidebar-head {
@@ -412,41 +569,58 @@ main {
   }
 
   .logo {
-    width: 270px;
-    height: 102px;
+    width: 240px;
+    height: 80px;
   }
 
   .logo img {
-    width: 270px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
   }
 
   .logo-hr hr {
-    width: 270px;
+    width: 240px;
     height: 0px;
   }
 
   .ProgramOverview {
-    width: 270px;
+    width: 240px;
     height: 33px;
+    font: normal normal bold 24px / 33px Montserrat;
   }
 
   .nav {
-    width: 340px;
+    width: 300px;
     height: calc(100vh - 235px);
   }
 
   .nav-item > a {
-    height: 80px;
+    height: 70px;
+    font: normal normal normal 16px/20px Montserrat;
+  }
+  .nav-item-active > a {
+    height: 70px;
+    font: normal normal medium 20px/24px Montserrat;
+    font: normal normal normal 14px/24px Montserrat;
+  }
+
+  /* content */
+  .info {
     display: flex;
-    align-items: center;
-    margin: 10px;
-    font: normal normal normal 17px/20px Montserrat;
+    height: max-content;
+    width: calc(100vw - 350px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 50px;
+    padding-top: 30px;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
   }
 
   /* content */
   .content {
-    width: calc(100vw - 400px);
+    width: calc(100vw - 350px);
     height: 100vh;
   }
 
@@ -462,28 +636,21 @@ main {
   }
 
   .heading {
-    /* width: 827px; */
-    /* height: 58px; */
-    text-align: left;
     font: normal normal 600 38px/48px Montserrat;
   }
 
   .common-heading {
-    font: normal normal bold 32px / 44px Montserrat;
+    font: normal normal bold 26px / 30px Montserrat;
   }
 
   .para-text {
-    font: normal normal normal 20px / 36px Montserrat;
+    font: normal normal normal 16px / 26px Montserrat;
   }
 
   .navigation {
     height: 80px;
-    width: calc(100vw - 400px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    padding: 0 85px;
+    width: calc(100vw - 350px);
+    padding: 0 50px;
   }
 
   .prv-btn,
@@ -499,197 +666,5 @@ main {
   .prv-btn-img {
     height: 18px;
     font: normal normal 600 19px/30px Montserrat;
-  }
-}
-
-@media only screen and (width <=480px) {
-  .info {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 30px 40px 40px 40px;
-    gap: 40px;
-    /* height: calc(100vh - 140px); */
-    margin-bottom: 90px;
-  }
-
-  .navigation {
-    position: fixed;
-    bottom: 0%;
-    right: 0%;
-    width: 100%;
-    left: 0%;
-    margin: 0%;
-    padding: 0% 10px;
-    height: 80px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px -1px 6px #00000029;
-    opacity: 1;
-  }
-
-  .nav-item a {
-    height: 54px;
-    font: normal normal normal 14px / 24px Montserrat;
-  }
-
-  .nav-item-active a {
-    height: 54px;
-    font: normal normal normal 14px / 24px Montserrat;
-  }
-
-  .main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0%;
-    padding: 0px 15px;
-    height: 54px;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .head {
-    padding: 0%;
-    width: 100%;
-    height: 54px;
-  }
-
-  .big-head {
-    height: 80px;
-    padding: 0%;
-  }
-
-  .burger {
-    width: 48px;
-    height: 54px;
-    background: #007cc3 0% 0% no-repeat padding-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .burger .open-icon,
-  .close-icon {
-    width: 34px;
-  }
-
-  .heading {
-    /* height: 29px; */
-    text-align: left;
-    font: normal normal 600 24px/29px Montserrat;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-    padding-left: 30px;
-  }
-
-  .sidebar-head {
-    flex-direction: row !important;
-    margin: 0;
-    height: 54px;
-    gap: 20px;
-  }
-
-  .span {
-    display: flex;
-    width: 64px;
-    height: 100%;
-    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0%
-      0% no-repeat padding-box;
-  }
-
-  .logo,
-  .logo img {
-    height: 36px;
-    width: 106px;
-  }
-
-  .logo-hr hr {
-    width: 0;
-    height: 41px;
-  }
-
-  .content {
-    width: 100vw;
-  }
-
-  .nav {
-    width: 100%;
-    margin: 16px;
-    height: 90%;
-  }
-
-  .navs {
-    position: absolute;
-    width: calc(100% - 0px);
-    height: calc(100vh - 108px);
-    top: 108px;
-    right: 0%;
-    background-color: #fff;
-    display: flex !important;
-  }
-
-  .nav-link {
-    height: 80px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #d1d1d1;
-    border-radius: 5px;
-    opacity: 1;
-  }
-
-  .ProgramOverview {
-    /* width: 197px; */
-    height: 24px;
-    text-align: left;
-    font: normal normal bold 16px/24px Montserrat;
-    letter-spacing: 0px;
-    color: #264397;
-    opacity: 1;
-  }
-
-  .prv-btn,
-  .next-btn {
-    font: normal normal 600 16px/40px Montserrat;
-  }
-
-  .sidebar-close {
-    display: none;
-  }
-
-  .navigation {
-    margin: 0%;
-    padding: 0% 35px;
-    height: 54px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px -1px 6px #00000029;
-    opacity: 1;
-  }
-
-  /* commom */
-
-  .common-heading {
-    width: 100%;
-    font: normal normal bold 28px/33px Montserrat;
-  }
-
-  .para-text {
-    width: 100%;
-    font: normal normal normal 20px/27px Montserrat;
-  }
-
-  .comm-width {
-    width: 100%;
-    margin-bottom: 30px;
   }
 }

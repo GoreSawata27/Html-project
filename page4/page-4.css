@@ -55,6 +55,16 @@
 }
 
 @media only screen and (width <=1600px) and (width >=778px) {
+  .head-4 {
+    height: 80px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .heading-4 {
+    font: normal normal 600 24px/29px Montserrat;
+    padding-left: 30px;
+  }
 }
 
 @media only screen and (width <=768px) {
