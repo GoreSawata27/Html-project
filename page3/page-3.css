@@ -1,0 +1,439 @@
+.head-3 {
+  height: 142px;
+  padding-left: 140px;
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.heading-3 {
+  font: normal normal 600 48px/58px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.page-3-list li {
+  width: 500px;
+  margin-left: 25px;
+  margin-bottom: 34px;
+  list-style-type: disc;
+}
+
+.pages {
+  margin-top: 60px;
+}
+
+.pagination-header {
+  display: flex;
+  gap: 16px;
+}
+
+.pagination-list {
+  width: 60px;
+  height: 60px;
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  border: 1px solid #d5d5d5;
+  font: normal normal 600 30px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.pagination-list-active {
+  text-align: left;
+  font: normal normal 600 30px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+}
+
+.pagination-list-active-one {
+  background: #ee3b33 0% 0% no-repeat padding-box;
+}
+
+.pagination-list-active-two {
+  background: #844293 0% 0% no-repeat padding-box;
+}
+
+.pagination-list-active-three {
+  background: #f8981c 0% 0% no-repeat padding-box;
+}
+
+.pagination-list-active-four {
+  background: #00acd4 0% 0% no-repeat padding-box;
+}
+
+.pagination-list-active-five {
+  background: #f15922 0% 0% no-repeat padding-box;
+}
+
+.pagination-list-active-six {
+  background: #06b085 0% 0% no-repeat padding-box;
+}
+
+.current-heading {
+  text-align: left;
+  font: normal normal bold 36px/30px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.pagination-info {
+  width: 1060px;
+  height: 400px;
+  background: #ee3b33 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+}
+
+.pagination-info-2 {
+  background: #844293 0% 0% no-repeat padding-box;
+}
+
+.pagination-info-3 {
+  background: #f8981c 0% 0% no-repeat padding-box;
+}
+
+.pagination-info-4 {
+  background: #00acd4 0% 0% no-repeat padding-box;
+}
+
+.pagination-info-5 {
+  background: #f15922 0% 0% no-repeat padding-box;
+}
+
+.pagination-info-6 {
+  background: #06b085 0% 0% no-repeat padding-box;
+}
+
+.pagination-head {
+  padding: 0 30px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.para-text-div {
+  margin-top: 44px;
+}
+
+.active-page-line-k {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+.active-line-k {
+  border: 4px solid #ee3b33;
+  height: 100%;
+}
+
+.active-page-line-1 {
+  height: 60px;
+  width: 214px;
+}
+.active-line-1 {
+  border: 4px solid #844293;
+  height: 100%;
+}
+
+.active-page-line-2 {
+  height: 60px;
+  width: 362px;
+}
+.active-line-2 {
+  border: 4px solid #f8981c;
+  height: 100%;
+}
+
+.active-page-line-3 {
+  height: 60px;
+  width: 514px;
+}
+.active-line-3 {
+  border: 4px solid #00acd4;
+  height: 100%;
+}
+
+.active-page-line-4 {
+  height: 60px;
+  width: 668px;
+}
+.active-line-4 {
+  border: 4px solid #f15922;
+  height: 100%;
+}
+
+.active-page-line-5 {
+  height: 60px;
+  width: 820px;
+}
+.active-line-5 {
+  border: 4px solid #06b085;
+  height: 100%;
+}
+
+.current-page-number-value {
+  width: 64px;
+  height: 64px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  text-align: left;
+  font: normal normal 600 48px/20px Montserrat;
+  letter-spacing: 0px;
+  border-radius: 5px;
+}
+.current-page-number-k {
+  color: #ee3b33;
+}
+.current-page-number-1 {
+  color: #844293;
+}
+.current-page-number-2 {
+  color: #f8981c;
+}
+.current-page-number-3 {
+  color: #00acd4;
+}
+.current-page-number-4 {
+  color: #f15922;
+}
+.current-page-number-5 {
+  border: none;
+  color: #06b085;
+}
+
+.pagination-info-ul {
+  margin: 30px;
+  padding: 30px;
+  width: 1000px;
+  height: 236px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+.pagination-info-ul ul {
+  margin-left: 30px;
+}
+
+.pagination-info-ul ul li {
+  height: 28px;
+  text-align: left;
+  font: normal normal normal 24px/21px Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+  list-style-type: disc;
+  color: #ee3b33 0% 0% no-repeat padding-box;
+  margin: 23px 0;
+}
+
+@media only screen and (width <=768px) {
+  .head-3 {
+    height: 80px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .heading-3 {
+    font: normal normal 600 24px/29px Montserrat;
+    padding-left: 30px;
+  }
+
+  .page-3-list {
+    width: 100%;
+  }
+  .comm-width {
+    width: 688px;
+    margin-bottom: 30px;
+  }
+
+  .page-3-list li {
+    width: 500px;
+    margin-left: 25px;
+    margin-bottom: 34px;
+    list-style-type: disc;
+  }
+
+  .pages {
+    margin-top: 60px;
+  }
+
+  .pagination-info {
+    width: 668px;
+    height: 375px;
+  }
+  .current-heading {
+    font: normal normal bold 30px/30px Montserrat;
+  }
+
+  .pagination-info-ul {
+    padding: 30px;
+    margin: 20px;
+    width: 626px;
+    height: 236px;
+  }
+
+  .pagination-info-ul ul {
+    margin-left: 20px;
+  }
+
+  .pagination-info-ul ul li {
+    height: 26px;
+    /* font: normal normal medium 20px/27px Montserrat; */
+    font: normal normal normal 22px/27px Montserrat;
+    letter-spacing: 0px;
+    margin: 23px 0;
+  }
+
+  .current-page-number-value {
+    width: 60px;
+    height: 60px;
+    font: normal normal 600 36px/15px Montserrat;
+  }
+
+  .pagination-header {
+    display: flex;
+    gap: 16px;
+  }
+
+  /* .pagination-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #fcfcfc 0% 0% no-repeat padding-box;
+    border: 1px solid #d5d5d5;
+    text-align: left;
+    font: normal normal 600 30px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+
+  .pagination-list-active-one {
+    text-align: left;
+    font: normal normal 600 30px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #ee3b33 0% 0% no-repeat padding-box;
+    border: none;
+  }
+
+  .pagination-list-active-two {
+    text-align: left;
+    font: normal normal 600 30px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #844293 0% 0% no-repeat padding-box;
+    border: none;
+  }
+
+  .pagination-list-active-three {
+    text-align: left;
+    font: normal normal 600 30px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #f8981c 0% 0% no-repeat padding-box;
+    border: none;
+  }
+
+  .pagination-list-active-four {
+    text-align: left;
+    font: normal normal 600 30px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #00acd4 0% 0% no-repeat padding-box;
+    border: none;
+  }
+
+  .pagination-list-active-five {
+    text-align: left;
+    font: normal normal 600 30px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #f15922 0% 0% no-repeat padding-box;
+    border: none;
+  }
+
+  .pagination-list-active-six {
+    text-align: left;
+    font: normal normal 600 30px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #06b085 0% 0% no-repeat padding-box;
+    border: none;
+  }
+
+  .pagination-head {
+    padding: 0 30px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .para-text-div {
+    margin-top: 44px;
+  }
+  .active-page-line-k {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .active-line-k {
+    border: 4px solid #ee3b33;
+    height: 100%;
+  }
+  .active-page-line-1 {
+    height: 60px;
+    width: 214px;
+    display: flex;
+    justify-content: center;
+  }
+  .active-line-1 {
+    border: 4px solid #844293;
+    height: 100%;
+  }
+  .active-page-line-2 {
+    height: 60px;
+    width: 362px;
+    display: flex;
+    justify-content: center;
+  }
+  .active-line-2 {
+    border: 4px solid #f8981c;
+    height: 100%;
+  }
+  .active-page-line-3 {
+    height: 60px;
+    width: 514px;
+    display: flex;
+    justify-content: center;
+  }
+  .active-line-3 {
+    border: 4px solid #00acd4;
+    height: 100%;
+  }
+  .active-page-line-4 {
+    height: 60px;
+    width: 668px;
+    display: flex;
+    justify-content: center;
+  }
+  .active-line-4 {
+    border: 4px solid #f15922;
+    height: 100%;
+  }
+  .active-page-line-5 {
+    height: 60px;
+    width: 820px;
+    display: flex;
+    justify-content: center;
+  }
+  .active-line-5 {
+    border: 4px solid #06b085;
+    height: 100%;
+  } */
+}
+
+@media only screen and (width <=1600px) and (width >=778px) {
+}

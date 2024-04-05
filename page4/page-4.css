@@ -1,0 +1,113 @@
+.head-4 {
+  height: 216px;
+  padding-left: 140px;
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.heading-4 {
+  width: 1013px;
+  font: normal normal 600 48px/58px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.page4-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 54px;
+}
+
+.page4-text {
+  text-align: left;
+  font: normal normal normal 24px/36px Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.page4-images {
+  gap: 70px;
+  padding-bottom: 71px;
+}
+
+.page4-img-line1 {
+  display: flex;
+  gap: 60px;
+}
+
+.page4-img img {
+  width: 500px;
+  height: 290px;
+}
+
+.img-bio {
+  width: 500px;
+  height: 150px;
+  background: #f4fbff 0% 0% no-repeat padding-box;
+  border: 1px solid #d1d1d1;
+  border-radius: 0px 0px 10px 10px;
+  padding: 25px 25px 20px 30px;
+
+  font: normal normal 600 24px/33px Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+@media only screen and (width <=1600px) and (width >=778px) {
+}
+
+@media only screen and (width <=768px) {
+  .head-4 {
+    width: 768px;
+    height: 80px;
+    padding-left: 0;
+  }
+
+  .heading-4 {
+    width: 506px;
+    font: normal normal 600 24px/27px Montserrat;
+    padding-left: 30px;
+  }
+
+  .page4-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 54px;
+  }
+
+  .page4-text {
+    width: 688px;
+    height: 78px;
+    text-align: left;
+    font: normal normal normal 20px/27px Montserrat;
+  }
+
+  .page4-images {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-bottom: 71px;
+  }
+
+  .page4-img-line1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+
+  .page4-img img {
+    width: 324px;
+    height: 188px;
+  }
+
+  .img-bio {
+    width: 324px;
+    height: 145px;
+    background: #f4fbff 0% 0% no-repeat padding-box;
+    font: normal normal 600 20px/27px Montserrat;
+    padding: 20px;
+  }
+}
