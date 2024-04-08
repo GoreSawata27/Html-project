@@ -119,10 +119,10 @@
   color: #000000;
 }
 
-@media only screen and (width <=768px) {
+@media only screen and (width >=480px) and (width<=1024px) {
   .head-8 {
     height: 80px;
-    width: 100%;
+    width: 688px;
     padding-left: 0;
   }
 
@@ -130,9 +130,101 @@
     padding-left: 30px;
     font: normal normal bold 28px/33px Montserrat;
   }
+
+  .page8-box {
+    width: 688px;
+    height: 669px;
+    margin-top: 40px;
+    padding: 40px;
+    gap: 33px;
+    flex-direction: column;
+  }
+
+  .page8-box-small {
+    width: 688px;
+    height: 619px !important;
+    margin-top: 40px;
+    padding: 40px;
+    gap: 33px;
+    flex-direction: column;
+  }
+
+  .page8-para {
+    width: 628px;
+    height: 151px;
+    text-align: left;
+    font: normal normal normal 20px/30px Montserrat;
+  }
+
+  .para8-bold-text {
+    width: 515px;
+    height: 59px;
+    text-align: left;
+    font: normal normal bold 24px/30px Montserrat;
+    margin-bottom: 20px;
+  }
+
+  .page8-para-image {
+    width: 628px;
+    height: 353px;
+  }
+
+  .page8-para-image img {
+    width: 341px;
+    height: 235px;
+  }
+
+  .page8-last-box {
+    width: 688px;
+    height: 890px;
+    margin-top: 40px;
+  }
+
+  .page8-box-heading {
+    height: 29px;
+    text-align: left;
+    font: normal normal bold 24px/30px Montserrat;
+    padding: 32px 40px;
+  }
+
+  .page8-last-box-image-parent {
+    gap: 0px;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+  }
+  .last-box-mobile-flex {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .page8-last-box-image {
+    width: 300px;
+    height: 230px;
+    margin-left: 35px;
+  }
+
+  .page8-last-box-image img {
+    width: 233px;
+    height: 182px;
+  }
+
+  .subhead {
+    width: 136px;
+    height: 29px;
+    font: normal normal bold 24px/33px Montserrat;
+    margin-bottom: 15px;
+  }
+
+  .subpara {
+    width: 293px;
+    height: 161px;
+    text-align: left;
+    font: normal normal normal 20px/30px Montserrat;
+  }
 }
 
-@media only screen and (width <=1600px) and (width >=778px) {
+@media only screen and (width <=1600px) and (width >=1024px) {
   .head-8 {
     height: 80px;
     width: 100%;
@@ -143,4 +235,7 @@
     font: normal normal 600 24px/29px Montserrat;
     padding-left: 30px;
   }
+}
+
+@media only screen and (width <=480px) {
 }

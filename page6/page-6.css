@@ -1,7 +1,8 @@
 .head-6 {
   height: 142px;
   padding-left: 140px;
-  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
+    no-repeat padding-box;
 }
 
 .heading-6 {
@@ -210,7 +211,7 @@ hr {
   list-style-type: disc;
 }
 
-@media only screen and (width <=768px) {
+@media only screen and (width >=480px) and (width<=1024px) {
   .head-6 {
     height: 80px;
     width: 100%;
@@ -223,4 +224,8 @@ hr {
   }
 }
 
-@media only screen and (width <=1600px) and (width >=778px) {}
+@media only screen and (width <=1600px) and (width >=1024px) {
+}
+
+@media only screen and (width <=480px) {
+}

@@ -1,3 +1,11 @@
+:root {
+  --heading: 48px;
+  --pagination-list: 30px;
+  --current-heading: 36px;
+  --current-page-number-value: 48px;
+  --pagination-info-ul-ul-li: 24px;
+}
+
 .head-3 {
   height: 142px;
   padding-left: 140px;
@@ -6,7 +14,7 @@
 }
 
 .heading-3 {
-  font: normal normal 600 48px/58px Montserrat;
+  font: normal normal 600 var(--heading) / 58px Montserrat;
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -39,7 +47,7 @@
 
 .pagination-list-active {
   text-align: left;
-  font: normal normal 600 30px/24px Montserrat;
+  font: normal normal 600 var(--pagination-list) / 24px Montserrat;
   letter-spacing: 0px;
   color: #ffffff;
   border: none;
@@ -71,7 +79,7 @@
 
 .current-heading {
   text-align: left;
-  font: normal normal bold 36px/30px Montserrat;
+  font: normal normal bold var(--current-heading) / 30px Montserrat;
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -176,7 +184,7 @@
   height: 64px;
   background: #ffffff 0% 0% no-repeat padding-box;
   text-align: left;
-  font: normal normal 600 48px/20px Montserrat;
+  font: normal normal 600 var(--current-page-number-value) / 20px Montserrat;
   letter-spacing: 0px;
   border-radius: 5px;
 }
@@ -217,7 +225,7 @@
 .pagination-info-ul ul li {
   height: 28px;
   text-align: left;
-  font: normal normal normal 24px/21px Montserrat;
+  font: normal normal normal var(--pagination-info-ul-ul-li) / 21px Montserrat;
   letter-spacing: 0px;
   color: #000000;
   list-style-type: disc;
@@ -225,139 +233,16 @@
   margin: 23px 0;
 }
 
-@media only screen and (width <=480px) {
-  .head-3 {
-    height: 56px;
-    width: 480px;
-    padding-left: 0px;
-  }
-
-  .heading-3 {
-    font: normal normal 600 22px/29px Montserrat;
-    padding-left: 30px;
-  }
-
-  .page-3-list {
-    width: 480px !important;
-  }
-  .comm-width {
-    width: 49%;
-    margin-bottom: 30px;
-  }
-
-  .page-3-list li {
-    width: 50%;
-    margin-left: 25px;
-    margin-bottom: 34px;
-    list-style-type: disc;
-  }
-
-  .pages {
-    margin-top: 40px;
-  }
-
-  .pagination-info {
-    width: 350px;
-    height: 375px;
-  }
-
-  .current-heading {
-    font: normal normal bold 22px/30px Montserrat;
-  }
-
-  .pagination-list {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #d5d5d5;
-    font: normal normal 600 28px/24px Montserrat;
-    letter-spacing: 0px;
-  }
-
-  .pagination-info-ul {
-    padding: 10px;
-    margin: 20px;
-    width: 309px;
-    height: 236px;
-  }
-
-  .pagination-info-ul ul {
-    margin-left: 20px;
-  }
-
-  .pagination-info-ul ul li {
-    height: 35px;
-    /* font: normal normal medium 20px/27px Montserrat; */
-    font: normal normal normal 22px/27px Montserrat;
-    letter-spacing: 0px;
-    margin: 23px 0;
-  }
-
-  .current-page-number-value {
-    width: 40px;
-    height: 40px;
-    font: normal normal 600 36px/15px Montserrat;
-  }
-
-  .pagination-header {
-    display: flex;
-    gap: 16px;
-  }
-  .active-page-line-k {
-    height: 40px;
-    width: 40px;
-  }
-  .active-line-k {
-    border: 3px solid #ee3b33;
-    height: 100%;
-  }
-
-  .active-page-line-1 {
-    height: 40px;
-    width: 153px;
-  }
-  .active-line-1 {
-    border: 3px solid #844293;
-    height: 100%;
-  }
-
-  .active-page-line-2 {
-    height: 40px;
-    width: 265px;
-  }
-  .active-line-2 {
-    border: 3px solid #f8981c;
-    height: 100%;
-  }
-
-  .active-page-line-3 {
-    height: 40px;
-    width: 375px;
-  }
-  .active-line-3 {
-    border: 3px solid #00acd4;
-    height: 100%;
-  }
-
-  .active-page-line-4 {
-    height: 40px;
-    width: 489px;
-  }
-  .active-line-4 {
-    border: 3px solid #f15922;
-    height: 100%;
-  }
-
-  .active-page-line-5 {
-    height: 40px;
-    width: 602px;
-  }
-  .active-line-5 {
-    border: 3px solid #06b085;
-    height: 100%;
-  }
-}
-
+/* for tabs */
 @media only screen and (width >=480px) and (width<=1024px) {
+  :root {
+    --heading: 24px;
+    --pagination-list: 30px;
+    --current-heading: 30px;
+    --current-page-number-value: 36px;
+    --pagination-info-ul-ul-li: 22px;
+  }
+
   .head-3 {
     height: 80px;
     width: 100%;
@@ -365,7 +250,7 @@
   }
 
   .heading-3 {
-    font: normal normal 600 24px/29px Montserrat;
+    font: normal normal 600 var(--heading) / 29px Montserrat;
     padding-left: 30px;
   }
 
@@ -392,8 +277,9 @@
     width: 668px;
     height: 375px;
   }
+
   .current-heading {
-    font: normal normal bold 30px/30px Montserrat;
+    font: normal normal bold var(--current-heading) / 30px Montserrat;
   }
 
   .pagination-info-ul {
@@ -401,6 +287,13 @@
     margin: 20px;
     width: 626px;
     height: 236px;
+  }
+  .pagination-list {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d5d5d5;
+    font: normal normal 600 var(--pagination-list) / 24px Montserrat;
+    letter-spacing: 0px;
   }
 
   .pagination-info-ul ul {
@@ -410,7 +303,7 @@
   .pagination-info-ul ul li {
     height: 26px;
     /* font: normal normal medium 20px/27px Montserrat; */
-    font: normal normal normal 22px/27px Montserrat;
+    font: normal normal normal var(--pagination-info-ul-ul-li) / 27px Montserrat;
     letter-spacing: 0px;
     margin: 23px 0;
   }
@@ -418,7 +311,7 @@
   .current-page-number-value {
     width: 60px;
     height: 60px;
-    font: normal normal 600 36px/15px Montserrat;
+    font: normal normal 600 var(--current-page-number-value) / 15px Montserrat;
   }
 
   .pagination-header {
@@ -427,14 +320,164 @@
   }
 }
 
+/* <----------------------------------------------------------------------------> */
+
+@media only screen and (width <=480px) {
+  :root {
+    --heading: 16px;
+    --pagination-list: 28px;
+    --current-heading: 22px;
+    --current-page-number-value: 36px;
+    --pagination-info-ul-ul-li: 16px;
+  }
+
+  .head-3 {
+    height: 56px;
+    width: 480px;
+    padding-left: 0px;
+  }
+
+  .heading-3 {
+    font: normal normal 600 var(--heading) / 29px Montserrat;
+    padding-left: 30px;
+  }
+
+  .page-3-list {
+    width: 480px !important;
+  }
+  .comm-width {
+    width: 49%;
+    margin-bottom: 30px;
+  }
+
+  .page-3-list li {
+    width: 50%;
+    margin-left: 25px;
+    margin-bottom: 34px;
+    list-style-type: disc;
+  }
+
+  .pages {
+    margin-top: 40px;
+  }
+
+  .pagination-info {
+    width: 300px;
+    height: 375px;
+  }
+
+  .current-heading {
+    font: normal normal bold var(--current-heading) / 30px Montserrat;
+  }
+
+  .pagination-list {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d5d5d5;
+    font: normal normal 600 var(--pagination-list) / 24px Montserrat;
+    letter-spacing: 0px;
+  }
+
+  .pagination-info-ul {
+    padding: 10px;
+    margin: 20px;
+    width: 260px;
+    height: 236px;
+  }
+
+  .pagination-info-ul ul {
+    margin-left: 20px;
+  }
+
+  .pagination-info-ul ul li {
+    height: 35px;
+    /* font: normal normal medium 20px/27px Montserrat; */
+    font: normal normal normal var(--pagination-info-ul-ul-li) / 27px Montserrat;
+    letter-spacing: 0px;
+    margin: 23px 0;
+  }
+
+  .current-page-number-value {
+    width: 40px;
+    height: 40px;
+    font: normal normal 600 var(--current-page-number-value) / 15px Montserrat;
+  }
+
+  .pagination-header {
+    display: flex;
+    gap: 12px;
+  }
+  .active-page-line-k {
+    height: 40px;
+    width: 40px;
+  }
+  .active-line-k {
+    border: 3px solid #ee3b33;
+    height: 100%;
+  }
+
+  .active-page-line-1 {
+    height: 40px;
+    width: 144px;
+  }
+  .active-line-1 {
+    border: 3px solid #844293;
+    height: 100%;
+  }
+
+  .active-page-line-2 {
+    height: 40px;
+    width: 250px;
+  }
+  .active-line-2 {
+    border: 3px solid #f8981c;
+    height: 100%;
+  }
+
+  .active-page-line-3 {
+    height: 40px;
+    width: 351px;
+  }
+  .active-line-3 {
+    border: 3px solid #00acd4;
+    height: 100%;
+  }
+
+  .active-page-line-4 {
+    height: 40px;
+    width: 458px;
+  }
+  .active-line-4 {
+    border: 3px solid #f15922;
+    height: 100%;
+  }
+
+  .active-page-line-5 {
+    height: 40px;
+    width: 562px;
+  }
+  .active-line-5 {
+    border: 3px solid #06b085;
+    height: 100%;
+  }
+}
+
 @media only screen and (width <=1600px) and (width >=1024px) {
+  :root {
+    --heading: 28px;
+    --pagination-list: 22px;
+    --current-heading: 22px;
+    --current-page-number-value: 26px;
+    --pagination-info-ul-ul-li: 18px;
+  }
+
   .head-3 {
     height: 100px;
     padding-left: 50px;
   }
 
   .heading-3 {
-    font: normal normal 600 36px/34px Montserrat;
+    font: normal normal 600 var(--heading) / 34px Montserrat;
   }
 
   .pages {
@@ -449,7 +492,7 @@
   .pagination-list {
     width: 40px;
     height: 40px;
-    font: normal normal 600 26px/24px Montserrat;
+    font: normal normal 600 var(--pagination-list) / 24px Montserrat;
   }
 
   .pagination-list-active {
@@ -457,7 +500,7 @@
   }
 
   .current-heading {
-    font: normal normal bold 30px/30px Montserrat;
+    font: normal normal bold var(--current-heading) / 30px Montserrat;
   }
 
   .pagination-info {
@@ -535,7 +578,7 @@
   .current-page-number-value {
     width: 44px;
     height: 44px;
-    font: normal normal 600 30px/20px Montserrat;
+    font: normal normal 600 var(--current-page-number-value) / 20px Montserrat;
   }
 
   .pagination-info-ul {
@@ -549,7 +592,7 @@
   }
 
   .pagination-info-ul ul li {
-    font: normal normal normal 20px/21px Montserrat;
+    font: normal normal normal var(--pagination-info-ul-ul-li) / 21px Montserrat;
     margin: 10px;
   }
 }
