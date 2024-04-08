@@ -141,6 +141,7 @@
                       alt="Image"
                       class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                       style="width: 40px; height: 40px"
+                      onclick="openImageModal('../Assets/page7/Image 100.png')"
                     />
                   </div>
                   <div
@@ -169,7 +170,11 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 80px; height: 80px"
+                        onclick="openImageModal('../Assets/page7/Image 99.png')"
                       />
+                      <div class="page-7-info-box">
+                        Students begin annotating to engage with the text.
+                      </div>
                       <img src="../Assets/page7/Image 99.png" alt="img" />
                     </div>
                     <div
@@ -196,6 +201,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 80px; height: 80px"
+                        onclick="openImageModal('../Assets/page7/Image 101.png')"
                       />
                     </div>
                     <div
@@ -224,6 +230,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 80px; height: 80px"
+                        onclick="openImageModal('../Assets/page7/Image 102.png')"
                       />
                     </div>
                     <div
@@ -252,6 +259,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 80px; height: 80px"
+                        onclick="openImageModal('../Assets/page7/Image 103.png')"
                       />
                     </div>
                     <div
@@ -278,6 +286,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 80px; height: 80px"
+                        onclick="openImageModal('../Assets/page7/Image 104.png')"
                       />
                     </div>
                     <div
@@ -337,6 +346,25 @@
           </a>
         </div>
       </div>
+      <div
+        class="modal fade"
+        id="imageModal"
+        tabindex="-1"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-body m-auto">
+              <img
+                src="../Assets/page5/Screenshot 2024-03-13 at 11.56.03 AM@2x.png"
+                class="modal-image img-fluid"
+                alt="Expanded Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script>
       function handlesidebar() {
@@ -347,6 +375,22 @@
         navs.classList.toggle("navs");
         openIcon.classList.toggle("hidden");
         closeIcon.classList.toggle("hidden");
+      }
+      function openImageModal(imageSrc) {
+        // Get the modal element
+        var modal = document.getElementById("imageModal");
+
+        // Get the image element inside the modal
+        var modalImage = modal.querySelector(".modal-image");
+
+        // Get the description element inside the modal
+        var modalDescription = modal.querySelector(".modal-description");
+
+        // Set the image source and alt attribute
+        modalImage.src = imageSrc;
+
+        // Show the modal
+        $("#imageModal").modal("show");
       }
     </script>
 

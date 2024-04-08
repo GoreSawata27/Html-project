@@ -1,8 +1,7 @@
 .head-7 {
   height: 142px;
   padding-left: 140px;
-  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
 }
 
 .heading-7 {
@@ -16,6 +15,21 @@
   height: 420px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #b2b2b2;
+}
+
+.page-7-info-box {
+  position: absolute;
+  font: normal normal 600 16px/20px Montserrat;
+  letter-spacing: 0px;
+  color: #000000;
+  width: 185px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #007CC380;
+  border: 1px solid #007CC3;
+  border-radius: 5px;
+  padding: 20px;
+  top: 40px;
+  left: 18px;
 }
 
 .page7-image-info {
@@ -76,8 +90,7 @@
 .info-and-barcode {
   width: 1090px;
   height: 715px;
-  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
   border-radius: 10px;
   margin-top: 60px;
   display: grid;
@@ -219,8 +232,7 @@
   .info-and-barcode {
     width: 1090px;
     height: 715px;
-    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0%
-      0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
     margin-top: 60px;

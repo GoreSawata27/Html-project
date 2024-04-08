@@ -150,6 +150,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 51px; height: 51px"
+                        onclick="openImageModal('../Assets/page10/Image1@2x.png')"
                       />
                     </div>
                   </div>
@@ -167,6 +168,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 51px; height: 51px"
+                        onclick="openImageModal('../Assets/page10/Image2 131@2x.png')"
                       />
                     </div>
                   </div>
@@ -186,6 +188,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 51px; height: 51px"
+                        onclick="openImageModal('../Assets/page10/Image3 132@2x.png')"
                       />
                       <div class="img-3-bio">
                         Cumulative word lists monitor students’ accuracy and
@@ -208,6 +211,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 51px; height: 51px"
+                        onclick="openImageModal('../Assets/page10/Image4 133@2x.png')"
                       />
                       <div class="img-4-bio">
                         Weekly check of spelling patterns taught in current and
@@ -283,6 +287,7 @@
                         alt="Image"
                         class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                         style="width: 51px; height: 51px"
+                        onclick="openImageModal('../Assets/page10/Image5 582@2x.png')"
                       />
                     </div>
                   </div>
@@ -316,6 +321,25 @@
           </a>
         </div>
       </div>
+      <div
+        class="modal fade"
+        id="imageModal"
+        tabindex="-1"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-body m-auto">
+              <img
+                src="../Assets/page5/Screenshot 2024-03-13 at 11.56.03 AM@2x.png"
+                class="modal-image img-fluid"
+                alt="Expanded Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script>
       function handlesidebar() {
@@ -327,6 +351,22 @@
         openIcon.classList.toggle("hidden");
         closeIcon.classList.toggle("hidden");
       }
+      function openImageModal(imageSrc) {
+        // Get the modal element
+        var modal = document.getElementById("imageModal");
+
+        // Get the image element inside the modal
+        var modalImage = modal.querySelector(".modal-image");
+
+        // Get the description element inside the modal
+        var modalDescription = modal.querySelector(".modal-description");
+
+        // Set the image source and alt attribute
+        modalImage.src = imageSrc;
+
+        // Show the modal
+        $("#imageModal").modal("show");
+      }
     </script>
 
     <!-- Bootstrap JS (optional, only needed if you use Bootstrap JS components) -->
@@ -335,5 +375,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>

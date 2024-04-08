@@ -106,7 +106,9 @@
 
       <!-- Page Content -->
       <div class="content">
-        <div class="head-6">
+        <div
+          class="head-6 d-flex align-items-center position-sticky top-0 w-100 z-1"
+        >
           <div class="burger" onclick="handlesidebar()">
             <img
               class="open-icon"
@@ -120,7 +122,9 @@
           </div>
           <span class="heading-6">12 Essentials for Phonics Success</span>
         </div>
-        <div class="pagination-head">
+        <div
+          class="pagination-head d-flex align-items-center justify-content-lg-start w-100"
+        >
           <ul class="pagination-ul">
             <li class="pagination-li">
               <a class="" href="../page-6.html">1</a>
@@ -165,14 +169,18 @@
             <div class="page6-pagination-head">
               <div class="d-flex page6-pagination-head-left">
                 <div class="back">
-                  <img src="../../Assets/page6/1/Group 339.png" alt="" />
+                  <a class="" href="../page-6.html">
+                    <img src="../../Assets/page6/1/Group 339.png" alt=""
+                  /></a>
                 </div>
                 <div class="common-heading">
                   2. Gradual release model must be used effectively.
                 </div>
               </div>
               <div class="prv">
-                <img src="../../Assets/page6/1/Group 340.png" alt="" />
+                <a href="../3/three.html">
+                  <img src="../../Assets/page6/1/Group 340.png" alt=""
+                /></a>
               </div>
             </div>
 
@@ -205,6 +213,7 @@
                       alt="Image"
                       class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                       style="width: 45px; height: 43px"
+                      onclick="openImageModal('../../Assets/page6/2/page2 1.png')"
                     />
                   </div>
                   <div class="page6-image-info img-info2">
@@ -219,6 +228,7 @@
                       alt="Image"
                       class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                       style="width: 45px; height: 43px"
+                      onclick="openImageModal('../../Assets/page6/2/page2 2.png')"
                     />
                   </div>
                   <div class="page6-image-info img-info2">
@@ -233,6 +243,7 @@
                       alt="Image"
                       class="position-absolute bottom-0 end-0 img-fluid img-rounded"
                       style="width: 45px; height: 43px"
+                      onclick="openImageModal('../../Assets/page6/2/page2 3.png')"
                     />
                   </div>
                   <div class="page6-image-info img-info2">
@@ -259,6 +270,25 @@
           </a>
         </div>
       </div>
+      <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body m-auto">
+            <img
+              src="../Assets/page5/Screenshot 2024-03-13 at 11.56.03 AM@2x.png"
+              class="modal-image img-fluid"
+              alt="Expanded Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     </main>
     <script>
       function handlesidebar() {
@@ -270,6 +300,23 @@
         openIcon.classList.toggle("hidden");
         closeIcon.classList.toggle("hidden");
       }
+      function openImageModal(imageSrc) {
+        // Get the modal element
+        var modal = document.getElementById("imageModal");
+
+        // Get the image element inside the modal
+        var modalImage = modal.querySelector(".modal-image");
+
+        // Get the description element inside the modal
+        var modalDescription = modal.querySelector(".modal-description");
+
+        // Set the image source and alt attribute
+        modalImage.src = imageSrc;
+
+        // Show the modal
+        $("#imageModal").modal("show");
+      }
+    </script>
     </script>
 
     <!-- Bootstrap JS (optional, only needed if you use Bootstrap JS components) -->
@@ -278,5 +325,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
