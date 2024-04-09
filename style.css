@@ -206,7 +206,7 @@ main {
 }
 
 /* for tabs */
-@media only screen and (width >=480px) and (width<=1024px) {
+@media only screen and (width >=576px) and (width<=1024px) {
   :root {
     --ProgramOverview: 20px;
     --next-prev: 24px;
@@ -383,7 +383,7 @@ main {
 /* <-------------------------------------------------------------------------------------------> */
 /* by developer own css */
 
-@media only screen and (width <=480px) {
+@media only screen and (width <=576px) {
   :root {
     --ProgramOverview: 20px;
     --next-prev: 24px;

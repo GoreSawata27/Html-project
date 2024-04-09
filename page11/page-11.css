@@ -138,91 +138,8 @@
   padding-top: 10px;
 }
 
-@media only screen and (width <=1600px) and (width >=1024px) {
-  .head-11 {
-    height: 398px;
-  }
-
-  .heading-11 {
-    font: normal normal 600 24px/29px Montserrat;
-    padding-left: 30px;
-    padding-top: 21px;
-  }
-
-  .information {
-    top: 310px;
-  }
-
-  .contents {
-    gap: 40px;
-    padding: 40px;
-  }
-
-  .phase-1 {
-    width: 100%;
-    height: max-content;
-    padding: 236px 60px 37px 40px;
-  }
-
-  .comp1 img {
-    width: 289px;
-    height: 85px;
-  }
-
-  .profile {
-    width: 480px;
-    height: 480px;
-    right: 5%;
-    top: -50%;
-  }
-
-  .phase-2 {
-    width: 100%;
-    height: max-content;
-  }
-
-  .img3 {
-    width: 239px;
-    height: 74px;
-  }
-
-  .phase-1-heading {
-    font: normal normal bold 30px/36px Montserrat;
-  }
-
-  .phase-1-text {
-    font: normal normal normal 20px/30px Montserrat;
-  }
-
-  .line {
-    margin-top: 30px;
-  }
-
-  .phase-footer {
-    height: max-content;
-    width: 100%;
-  }
-
-  .phase-3 {
-    width: 100%;
-    height: max-content;
-  }
-
-  .page-11-footer {
-    width: 100%;
-    height: max-content;
-  }
-
-  .foot-1 {
-    font: normal normal bold 30px/36px Montserrat;
-  }
-
-  .foot-2 {
-    font: normal normal medium 24px/24px Montserrat;
-  }
-}
-
-@media only screen and (width >=480px) and (width<=1024px) {
+/* tabs */
+@media only screen and (width >=576px) and (width<=1024px) {
   .head-11 {
     height: 398px;
   }
@@ -308,5 +225,12 @@
   }
 }
 
-@media only screen and (width <=480px) {
+@media only screen and (width <=1600px) and (width >=1024px) {
+  :root {
+    --heading: 24px;
+    --phase-1-heading: 30px;
+    --phase-1-text: 20px;
+    --foot-1: 30px;
+    --foot-2: 24px;
+  }
 }
