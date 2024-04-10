@@ -94,7 +94,7 @@ main {
   display: none;
 }
 
-.nav-item-active > a {
+.nav-item-active>a {
   height: 80px;
   background: #1c449c 0% 0% no-repeat padding-box;
   border: 1px solid #d1d1d1;
@@ -109,11 +109,11 @@ main {
   font-weight: 500;
 }
 
-.nav-item-active > a:hover {
+.nav-item-active>a:hover {
   color: #ffffff;
 }
 
-.nav-item > a {
+.nav-item>a {
   height: 80px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #d1d1d1;
@@ -128,7 +128,7 @@ main {
   font-weight: 500;
 }
 
-.nav-item > a:hover {
+.nav-item>a:hover {
   color: #000000;
 }
 
@@ -136,13 +136,15 @@ main {
 
 .info {
   display: flex;
-  width: calc(100vw - 520px);
-  padding-left: 140px;
+  /* width: calc(100vw - 520px); */
+  /* padding-left: 140px; */
   padding-top: 58px;
-  padding-right: 200px;
+  /* padding-right: 200px; */
   padding-bottom: 110px;
   gap: 50px;
   height: max-content;
+  width: 1061px;
+  justify-content: center;
 }
 
 .content {
@@ -151,19 +153,30 @@ main {
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px -1px 6px #00000029;
 }
 
 .navigation {
   height: 100px;
-  width: calc(100vw - 520px);
+  width: 1061px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
-  padding: 0 140px;
-  padding-right: 200px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px -1px 6px #00000029;
+  /* overflow: hidden; */
+  /* padding: 0 140px; */
+  /* padding-right: 200px; */
+
 }
 
 .prv-btn,
@@ -177,6 +190,7 @@ main {
   display: flex;
   align-items: center;
   gap: 16px;
+  height: 100px;
 }
 
 .burger,
@@ -201,7 +215,7 @@ main {
 }
 
 .comm-width {
-  width: 1080px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -284,8 +298,7 @@ main {
     display: flex;
     width: 64px;
     height: 100%;
-    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0%
-      0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
   }
 
   .logo,
@@ -396,6 +409,7 @@ main {
     padding-left: 15px;
     font: normal normal 600 16px/24px Montserrat;
   }
+
   .mobile-heading {
     font: normal normal 600 22px/24px Montserrat !important;
     padding-left: 30px !important;
@@ -496,8 +510,7 @@ main {
     display: flex;
     width: 64px;
     height: 100%;
-    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0%
-      0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
   }
 
   .logo,
@@ -616,14 +629,14 @@ main {
     height: calc(100vh - 235px);
   }
 
-  .nav-item > a {
+  .nav-item>a {
     font-weight: 500 !important;
     height: 70px;
     font: normal normal medium var(--sidebar-links) / 24px Montserrat;
     font: normal normal normal var(--sidebar-links) / 20px Montserrat;
   }
 
-  .nav-item-active > a {
+  .nav-item-active>a {
     height: 70px;
     font-weight: 500 !important;
     font: normal normal medium var(--sidebar-links) / 24px Montserrat;
@@ -635,13 +648,13 @@ main {
     display: flex;
     height: max-content;
     width: calc(100vw - 350px);
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
     padding: 50px;
     padding-top: 30px;
     gap: 50px;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
 
   /* content */
@@ -654,6 +667,7 @@ main {
 
   .common-heading {
     font: normal normal bold var(--common-heading) / 30px Montserrat;
+    align-content: end;
   }
 
   .para-text {

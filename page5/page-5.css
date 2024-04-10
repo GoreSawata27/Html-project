@@ -9,7 +9,7 @@
 
 .head-5 {
   height: 142px;
-  padding-left: 140px;
+  /* padding-left: 140px; */
   background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
     no-repeat padding-box;
 }
@@ -19,6 +19,9 @@
   font: normal normal 600 var(--heading) / 58px Montserrat;
   letter-spacing: 0px;
   color: #ffffff;
+  width: 1061px;
+  height: 142px;
+  align-content: center;
 }
 
 .para-text-div {
@@ -26,7 +29,7 @@
 }
 
 .page-3-list {
-  width: 1080px;
+  width: 100%;
 }
 
 .page-3-list li {
@@ -58,13 +61,18 @@
 .page5-box {
   width: 100%;
   height: 1100px;
-  padding-left: 140px;
+  padding-left: 10px;
   padding-top: 42px;
+  padding-bottom: 100px;
   background: #f4fbff 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .box-heading {
-  width: 594px;
+  width: 1061px;
   height: 44px;
   margin-bottom: 20px;
   font: normal normal bold var(--box-heading) / 44px Montserrat;
@@ -83,7 +91,7 @@
 
 .boxes-parent {
   gap: 60px;
-  width: 1400px;
+  width: 1061px;
 }
 
 .boxes {
@@ -135,6 +143,7 @@
   .heading-5 {
     padding-left: 30px;
     font: normal normal 600 var(--heading) / 29px Montserrat;
+    height: 80px;
   }
 
   .comm-width {
@@ -185,10 +194,14 @@
   }
 
   .box-heading {
-    width: 688px;
+    width: 100%;
     height: 33px;
     margin-bottom: 20px;
     font: normal normal bold var(--box-heading) / 33px Montserrat;
+  }
+
+  .boxes-parent {
+    width: 100%;
   }
 
   .box-paragraph {
@@ -205,7 +218,7 @@
   }
 
   .boxes {
-    width: 688px;
+    width: 100%;
     height: max-content;
     padding: 40px;
   }
@@ -340,6 +353,7 @@
     --inner-box-heading: 20px;
     --inner-box-para: 18px;
   }
+
   .head-5 {
     height: 80px;
     width: 100%;
@@ -352,12 +366,16 @@
   }
 
   .page5-image {
-    width: 1060px;
-    height: 550px;
+    width: 100%;
+    height: 357px;
+  }
+
+  .page5-image img {
+    width: 62%;
   }
 
   .page5-image-info {
-    width: 1060px;
+    width: 100%;
 
     font: normal normal 600 var(--page5-image-info) / 30px Montserrat;
 
@@ -366,21 +384,22 @@
 
   .page5-box {
     width: 100%;
-    height: 1100px;
-    padding-left: 50px;
+    height: max-content;
+    padding: 0px 40px;
     padding-top: 42px;
+    padding-bottom: 100px;
     background: #f4fbff 0% 0% no-repeat padding-box;
   }
 
   .box-heading {
-    width: 594px;
+    width: 100%;
     height: 44px;
     margin-bottom: 20px;
     font: normal normal bold var(--box-heading) / 44px Montserrat;
   }
 
   .box-paragraph {
-    width: 1060px;
+    width: 100%;
     height: 79px;
     margin-bottom: 60px;
     font: normal normal normal var(--box-paragraph) / 36px Montserrat;
@@ -388,7 +407,7 @@
 
   .boxes-parent {
     gap: 40px;
-    width: 1400px;
+    width: 100%;
   }
 
   .boxes {

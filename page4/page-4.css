@@ -6,16 +6,17 @@
 
 .head-4 {
   height: 216px;
-  padding-left: 140px;
-  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
-    no-repeat padding-box;
+  /* padding-left: 140px; */
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
 }
 
 .heading-4 {
-  width: 1013px;
-  font: normal normal 600 var(--current-heading) / 58px Montserrat;
+  width: 1061px;
+  font: normal normal 600 var(--heading) / 58px Montserrat;
   letter-spacing: 0px;
   color: #ffffff;
+  height: 216px;
+  align-content: center;
 }
 
 .page4-header {
@@ -69,15 +70,15 @@
   }
 
   .head-4 {
-    width: 768px;
+    width: 100%;
     height: 80px;
     padding-left: 0;
   }
 
   .heading-4 {
-    width: 538px;
+    width: 100%;
     font: normal normal 600 var(--heading) / 27px Montserrat;
-    padding-left: 30px;
+    padding: 0 30px;
   }
 
   .page4-header {
@@ -88,7 +89,7 @@
   }
 
   .page4-text {
-    width: 688px;
+    width: 100%;
     height: 78px;
     text-align: left;
     font: normal normal normal var(--page4-text) / 27px Montserrat;
@@ -106,6 +107,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 60px;
+    flex-wrap: wrap;
   }
 
   .page4-img img {
@@ -195,7 +197,9 @@
 
   .heading-4 {
     font: normal normal 600 var(--heading) / 29px Montserrat;
-    padding-left: 50px;
+    padding: 0 50px;
+    height: 80px;
+    width: 100%;
   }
 
   .page4-text {
@@ -210,6 +214,7 @@
   .page4-img-line1 {
     display: flex;
     gap: 60px;
+    flex-wrap: wrap;
   }
 
   .page4-img img {

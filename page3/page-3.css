@@ -8,15 +8,17 @@
 
 .head-3 {
   height: 142px;
-  padding-left: 140px;
-  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0%
-    no-repeat padding-box;
+  /* padding-left: 140px; */
+  background: transparent linear-gradient(90deg, #1c449c 0%, #007cc3 100%) 0% 0% no-repeat padding-box;
 }
 
 .heading-3 {
   font: normal normal 600 var(--heading) / 58px Montserrat;
   letter-spacing: 0px;
   color: #ffffff;
+  height: 142px;
+  width: 1061px;
+  align-content: center;
 }
 
 .page-3-list li {
@@ -129,6 +131,7 @@
   display: flex;
   justify-content: center;
 }
+
 .active-line-k {
   border: 4px solid #ee3b33;
   height: 100%;
@@ -138,6 +141,7 @@
   height: 60px;
   width: 214px;
 }
+
 .active-line-1 {
   border: 4px solid #844293;
   height: 100%;
@@ -147,6 +151,7 @@
   height: 60px;
   width: 362px;
 }
+
 .active-line-2 {
   border: 4px solid #f8981c;
   height: 100%;
@@ -156,6 +161,7 @@
   height: 60px;
   width: 514px;
 }
+
 .active-line-3 {
   border: 4px solid #00acd4;
   height: 100%;
@@ -165,6 +171,7 @@
   height: 60px;
   width: 668px;
 }
+
 .active-line-4 {
   border: 4px solid #f15922;
   height: 100%;
@@ -174,6 +181,7 @@
   height: 60px;
   width: 820px;
 }
+
 .active-line-5 {
   border: 4px solid #06b085;
   height: 100%;
@@ -188,21 +196,27 @@
   letter-spacing: 0px;
   border-radius: 5px;
 }
+
 .current-page-number-k {
   color: #ee3b33;
 }
+
 .current-page-number-1 {
   color: #844293;
 }
+
 .current-page-number-2 {
   color: #f8981c;
 }
+
 .current-page-number-3 {
   color: #00acd4;
 }
+
 .current-page-number-4 {
   color: #f15922;
 }
+
 .current-page-number-5 {
   border: none;
   color: #06b085;
@@ -257,8 +271,9 @@
   .page-3-list {
     width: 100%;
   }
+
   .comm-width {
-    width: 688px;
+    width: 100%;
     margin-bottom: 30px;
   }
 
@@ -274,8 +289,10 @@
   }
 
   .pagination-info {
-    width: 668px;
+    width: 100%;
     height: 375px;
+    padding: 0 20px;
+
   }
 
   .current-heading {
@@ -284,10 +301,12 @@
 
   .pagination-info-ul {
     padding: 30px;
-    margin: 20px;
-    width: 626px;
+    margin: 0px;
+    width: 100%;
     height: 236px;
+    margin-top: 20px;
   }
+
   .pagination-list {
     width: 60px;
     height: 60px;
@@ -345,6 +364,7 @@
   .page-3-list {
     width: 480px !important;
   }
+
   .comm-width {
     width: 49%;
     margin-bottom: 30px;
@@ -407,10 +427,12 @@
     display: flex;
     gap: 12px;
   }
+
   .active-page-line-k {
     height: 40px;
     width: 40px;
   }
+
   .active-line-k {
     border: 3px solid #ee3b33;
     height: 100%;
@@ -420,6 +442,7 @@
     height: 40px;
     width: 144px;
   }
+
   .active-line-1 {
     border: 3px solid #844293;
     height: 100%;
@@ -429,6 +452,7 @@
     height: 40px;
     width: 250px;
   }
+
   .active-line-2 {
     border: 3px solid #f8981c;
     height: 100%;
@@ -438,6 +462,7 @@
     height: 40px;
     width: 351px;
   }
+
   .active-line-3 {
     border: 3px solid #00acd4;
     height: 100%;
@@ -447,6 +472,7 @@
     height: 40px;
     width: 458px;
   }
+
   .active-line-4 {
     border: 3px solid #f15922;
     height: 100%;
@@ -456,6 +482,7 @@
     height: 40px;
     width: 562px;
   }
+
   .active-line-5 {
     border: 3px solid #06b085;
     height: 100%;
@@ -473,11 +500,14 @@
 
   .head-3 {
     height: 100px;
-    padding-left: 50px;
+    padding: 0 50px;
+    width: 100%;
   }
 
   .heading-3 {
+    height: 100px;
     font: normal normal 600 var(--heading) / 34px Montserrat;
+    width: 100%;
   }
 
   .pages {
@@ -504,9 +534,10 @@
   }
 
   .pagination-info {
-    width: 1060px;
+    width: 100%;
     height: 300px;
     border-radius: 10px;
+    padding: 0 30px;
   }
 
   .pagination-head {
@@ -525,6 +556,7 @@
     height: 40px;
     width: 40px;
   }
+
   .active-line-k {
     border: 3px solid #ee3b33;
     height: 100%;
@@ -534,6 +566,7 @@
     height: 40px;
     width: 142px;
   }
+
   .active-line-1 {
     border: 3px solid #844293;
     height: 100%;
@@ -543,6 +576,7 @@
     height: 40px;
     width: 242px;
   }
+
   .active-line-2 {
     border: 3px solid #f8981c;
     height: 100%;
@@ -552,6 +586,7 @@
     height: 40px;
     width: 340px;
   }
+
   .active-line-3 {
     border: 3px solid #00acd4;
     height: 100%;
@@ -561,6 +596,7 @@
     height: 40px;
     width: 442px;
   }
+
   .active-line-4 {
     border: 3px solid #f15922;
     height: 100%;
@@ -570,6 +606,7 @@
     height: 40px;
     width: 542px;
   }
+
   .active-line-5 {
     border: 3px solid #06b085;
     height: 100%;
@@ -582,13 +619,16 @@
   }
 
   .pagination-info-ul {
-    margin: 30px;
+    margin: 0%;
+    margin-top: 20px;
     padding: 10px;
     height: 150px;
+    width: 100%;
   }
 
   .pagination-info-ul ul {
     margin-left: 20px;
+    width: 100%;
   }
 
   .pagination-info-ul ul li {
